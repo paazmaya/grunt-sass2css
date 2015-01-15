@@ -76,36 +76,18 @@ For example to set pretty printing and to keep comments, use `['-p', '-k']`, or
 
 #### Default Options
 
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
 ```js
 grunt.initConfig({
   sass2css: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+     defaultOptions: {
+        files: {
+          'tmp/default-1.scss': ['test/fixtures/styles-1.sass']
+        }
+      }
+  }
 });
 ```
 
-#### Custom Options
-
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  sass2css: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
 
 ## Contributing
 
@@ -113,4 +95,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-_(Nothing yet)_
+* v0.1.0 (2015-01-15) Doing what is promised, when `sass2scss` is available
+
