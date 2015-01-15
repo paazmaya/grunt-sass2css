@@ -101,6 +101,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
-  grunt.registerTask('test', ['clean', 'sass2scss', 'nodeunit']);
-  grunt.registerTask('default', ['eslint', 'test']);
+  grunt.registerTask('test', ['eslint', 'clean', 'sass2scss', 'nodeunit']);
+  grunt.registerTask('default', ['test']);
 };
