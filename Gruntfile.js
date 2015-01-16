@@ -8,7 +8,7 @@
 
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function exportGrunt(grunt) {
 
   grunt.initConfig({
     eslint: {
@@ -26,9 +26,8 @@ module.exports = function(grunt) {
     sass2scss: {
       // All multi task items shall have the same binPath
       options: {
-        binPath: '../../forks/sass2scss/sass2scss'
+        binPath: 'sass2scss'
       },
-
 
       defaultOptions: {
         files: {
@@ -38,7 +37,6 @@ module.exports = function(grunt) {
 
       prettyKeep: {
         options: {
-          binPath: '../../forks/sass2scss/sass2scss',
           args: [
             'pretty',
             'keep'

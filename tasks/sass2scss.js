@@ -36,12 +36,14 @@ module.exports = function exportGrunt(grunt) {
 
 
     var executor = function executor(map) {
+      grunt.log.verbose.writeln('Converting file: ' + map.src);
+
       var command = [options.binPath].concat(
         options.args, ['<', map.src]
       ).join(' ');
       exec(command, function spawnDone(error, stdout) {
         if (error) {
-          grunt.log.warn('Failure with sass2scss: ' + error);
+          grunt.log.warn('Failure with sass2scss. ' + error);
         }
         else {
           grunt.file.write(map.dest, stdout, 'utf8');
