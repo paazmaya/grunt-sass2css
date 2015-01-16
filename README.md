@@ -106,5 +106,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+* v0.1.1 (2015-01-26) A bit more docs
 * v0.1.0 (2015-01-15) Doing what is promised, when `sass2scss` is available
 
