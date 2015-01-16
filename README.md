@@ -4,9 +4,10 @@
 
 [![Build Status](https://img.shields.io/travis/paazmaya/grunt-sass2scss.svg?style=flat-square)](https://travis-ci.org/paazmaya/grunt-sass2scss)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-sass2scss/index)](https://github.com/igrigorik/ga-beacon)
-[![Dependency Status](https://img.shields.io/david-dm/paazmaya/grunt-sass2scss.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sass2scss)
-[![devDependency Status](https://img.shields.io/david-dm/paazmaya/grunt-sass2scss/dev-status.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sass2scss#info=devDependencies)
+[![Dependency Status](https://img.shields.io/david/paazmaya/grunt-sass2scss.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sass2scss)
+[![devDependency Status](https://img.shields.io/david/dev/paazmaya/grunt-sass2scss.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sass2scss#info=devDependencies)
 [![Built with Grunt](http://img.shields.io/badge/Grunt-0.4-blue.svg?style=flat-square)](http://gruntjs.com/)
+[![Using sass2scss](https://img.shields.io/badge/sass2scss-1.0-blue.svg?style=flat-square)](https://github.com/mgreter/sass2scss)
 
 ## Getting Started
 
