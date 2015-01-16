@@ -9,7 +9,9 @@ before_script:
   - tar zxf v1.0.2.tar.gz
   - cd sass2scss-1.0.2/
   - make
-  - export PATH=$PATH:$PWD
+  - cd ..
+  - export PATH=$PATH:$PWD/sass2scss-1.0.2
+  - sass2scss --version
 matrix:
   fast_finish: true
   allow_failures:
