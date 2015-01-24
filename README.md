@@ -104,10 +104,20 @@ grunt.initConfig({
 
 ## Contributing
 
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/), via `grunt test` command.
+[Please refer to a GitHub blog post on how to create somewhat perfect pull request.](https://github.com/blog/1943-how-to-write-the-perfect-pull-request "How to write the perfect pull request")
+
+In lieu of a formal styleguide, take care to maintain the existing coding style. 
+Add unit tests for any new or changed functionality. 
+Lint and test your code using [Grunt](http://gruntjs.com/), via `grunt test` command.
 
 ## Release History
 
 * v0.1.1 (2015-01-26) A bit more docs
 * v0.1.0 (2015-01-15) Doing what is promised, when `sass2scss` is available
+
+## License
+
+Copyright (c) Juga Paazmaya <olavic@gmail.com>
+
+Licensed under the [MIT license](LICENSE-MIT).
 
