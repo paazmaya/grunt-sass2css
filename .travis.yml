@@ -3,6 +3,7 @@ language: node_js
 node_js:
   - "0.10"
   - "0.11"
+  - "iojs"
 before_script:
   - npm install -g grunt-cli
   - wget https://github.com/mgreter/sass2scss/archive/v1.0.2.tar.gz
@@ -12,7 +13,3 @@ before_script:
   - cd ..
   - export PATH=$PATH:$PWD/sass2scss-1.0.2
   - sass2scss --version
-matrix:
-  fast_finish: true
-  allow_failures:
-    - node_js: "0.11"
