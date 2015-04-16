@@ -8,7 +8,6 @@
 
 'use strict';
 
-var fs = require('fs');
 var exec = require('child_process').exec;
 
 module.exports = function exportGrunt(grunt) {
@@ -68,9 +67,7 @@ module.exports = function exportGrunt(grunt) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
           return false;
         }
-        else {
-          return true;
-        }
+        return true;
       });
 
       src.forEach(function eachSrc(source) {
