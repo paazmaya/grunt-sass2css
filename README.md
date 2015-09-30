@@ -10,14 +10,15 @@
 
 ## Getting Started
 
-This plugin requires Grunt `~0.4` and `sass2scss` binary to be available either via PATH or defined via configuration.
+This plugin requires Grunt `~0.4` and `sass2scss` binary to be available either via `PATH` or defined via configuration.
 
-The `sass2scss` tool can only [be compiled from sources](https://github.com/mgreter/sass2scss), for example in Linux/Mac:
+The `sass2scss` tool can only [be compiled from sources](https://github.com/mgreter/sass2scss)
+at the moment, for example in Linux/Mac:
 
 ```sh
-wget https://github.com/mgreter/sass2scss/archive/v1.0.2.tar.gz
-tar zxf v1.0.2.tar.gz
-cd sass2scss-1.0.2/
+wget https://github.com/mgreter/sass2scss/archive/v1.0.3.tar.gz
+tar zxf v1.0.3.tar.gz
+cd sass2scss-1.0.3/
 make
 [sudo] mv sass2scss /usr/local/bin/
 ```

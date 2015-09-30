@@ -14,8 +14,7 @@ module.exports = function exportGrunt(grunt) {
     eslint: {
       all: [
         'Gruntfile.js',
-        'tasks/*.js',
-        '<%= nodeunit.tests %>'
+        'tasks/*.js'
       ]
     },
 
