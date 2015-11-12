@@ -2,13 +2,13 @@
  * grunt-sass2scss
  * https://github.com/paazmaya/grunt-sass2scss
  *
- * Copyright (c) Juga Paazmaya
+ * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (http://paazmaya.fi)
  * Licensed under the MIT license.
  */
 
 'use strict';
 
-var exec = require('child_process').exec;
+const exec = require('child_process').exec;
 
 module.exports = function exportGrunt(grunt) {
 
