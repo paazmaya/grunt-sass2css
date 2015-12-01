@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "grunt-eslint": "~17.3",
-    "grunt-contrib-clean": "~0.6",
+    "grunt-contrib-clean": "~0.7",
     "grunt-contrib-nodeunit": "~0.4",
     "grunt": "~0.4"
   },
@@ -42,6 +42,7 @@
     "sass",
     "scss",
     "convert",
+    "transform",
     "sass2scss",
     "sasstoscss"
   ]

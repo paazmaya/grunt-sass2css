@@ -2,17 +2,14 @@ sudo: false
 language: node_js
 node_js:
   - "4.2"
-cache:
-  directories:
-    - node_modules
 matrix:
   fast_finish: true
 before_script:
   - npm install -g grunt-cli
-  - wget https://github.com/mgreter/sass2scss/archive/v1.0.3.tar.gz
-  - tar zxf v1.0.3.tar.gz
-  - cd sass2scss-1.0.3/
+  - wget https://github.com/mgreter/sass2scss/archive/v1.0.5.tar.gz
+  - tar zxf v1.0.5.tar.gz
+  - cd sass2scss-1.0.5/
   - make
   - cd ..
-  - export PATH=$PATH:$PWD/sass2scss-1.0.3
+  - export PATH=$PATH:$PWD/sass2scss-1.0.5
   - sass2scss --version
