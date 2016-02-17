@@ -10,8 +10,9 @@
 
 ## Getting Started
 
-This plugin requires Grunt `~0.4`, Node.js minimum of `4.2.0` and `sass2scss` binary to
-be available either via `PATH` or defined via configuration.
+This plugin requires [Grunt](http://gruntjs.com/) `~0.4` and [Node.js](https://nodejs.org/en/)
+version to be minimum of `4.2.0`, which is the Long Term Support (LTS) version,
+and `sass2scss` binary to be available either via `PATH` or defined via configuration.
 
 The `sass2scss` tool can only [be compiled from sources](https://github.com/mgreter/sass2scss)
 at the moment, for example in Linux/Mac:
