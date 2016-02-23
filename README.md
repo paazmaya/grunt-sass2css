@@ -118,12 +118,17 @@ Lint and test your code using [Grunt](http://gruntjs.com/), via `grunt test` com
 
 ## Release History
 
-* `v0.1.1` (2015-01-26) A bit more docs
-* `v0.1.0` (2015-01-15) Doing what is promised, when `sass2scss` is available
+* `v0.2.0` (2016-02-22)
+  - Update dependencies
+  - Minimum Node.js version requirement is `4.2.0` (LTS)
+* `v0.1.1` (2015-01-26)
+  - A bit more docs
+* `v0.1.0` (2015-01-15)
+  - Doing what is promised, when `sass2scss` is available
 
 ## License
 
-Copyright (c) [Juga Paazmaya <paazmaya@yahoo.com>](http://paazmaya.fi)
+Copyright (c) [Juga Paazmaya](http://www.paazmaya.fi) <paazmaya@yahoo.com>
 
 Licensed under the [MIT license](LICENSE).
 

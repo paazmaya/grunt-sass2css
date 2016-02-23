@@ -14,15 +14,15 @@ module.exports = function exportGrunt(grunt) {
 
   grunt.registerMultiTask('sass2scss', 'Convert Sass files to SCSS files with sass2scss', function register() {
 
-    var options = this.options({
+    const options = this.options({
       binPath: 'sass2scss',
       args: []
     });
-    var done = this.async();
-    var mapList = [];
+    const done = this.async();
+    const mapList = [];
 
     // Add possibly missing dashes, since they are mentioned as optional
-    options.args = options.args.map(function missingDashes(item) {
+    options.args = options.args.map((item) => {
       if (item.indexOf('-') === 0) {
         return item;
       }
@@ -34,13 +34,13 @@ module.exports = function exportGrunt(grunt) {
     });
 
 
-    var executor = function executor(map) {
+    function executor(map) {
       grunt.log.verbose.writeln('Converting file: ' + map.src);
 
-      var command = [options.binPath].concat(
+      const command = [options.binPath].concat(
         options.args, ['<', map.src]
       ).join(' ');
-      exec(command, function spawnDone(error, stdout) {
+      exec(command, (error, stdout) => {
         if (error) {
           grunt.log.warn('Failure with sass2scss. ' + error);
         }
@@ -49,19 +49,19 @@ module.exports = function exportGrunt(grunt) {
         }
         iterate();
       });
-    };
+    }
 
-    var iterate = function iterate() {
+    function iterate() {
       if (mapList.length === 0) {
         done();
         return;
       }
-      var map = mapList.shift();
+      const map = mapList.shift();
       executor(map);
-    };
+    }
 
-    this.files.forEach(function eachFiles(f) {
-      var src = f.src.filter(function filterSrc(filepath) {
+    this.files.forEach((f) => {
+      const src = f.src.filter((filepath) => {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
@@ -70,9 +70,9 @@ module.exports = function exportGrunt(grunt) {
         return true;
       });
 
-      src.forEach(function eachSrc(source) {
+      src.forEach((source) => {
 
-        var destination = f.dest;
+        let destination = f.dest;
         if (typeof destination !== 'string') {
           // Assume that destination to be written next to source
           destination = source.replace(/\.sass$/, '.scss');
