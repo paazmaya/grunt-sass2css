@@ -118,7 +118,7 @@ Lint and test your code using [Grunt](http://gruntjs.com/), via `grunt test` com
 
 ## Release History
 
-* `v0.2.0` (2016-02-22)
+* `v0.2.0` (2016-02-23)
   - Update dependencies
   - Minimum Node.js version requirement is `4.2.0` (LTS)
 * `v0.1.1` (2015-01-26)
