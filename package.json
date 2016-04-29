@@ -29,7 +29,7 @@
     "lint": "grunt eslint"
   },
   "devDependencies": {
-    "grunt-eslint": "~18.0",
+    "grunt-eslint": "~18.1",
     "grunt-contrib-clean": "~1.0",
     "grunt-contrib-nodeunit": "~1.0",
     "grunt": "~1.0"
