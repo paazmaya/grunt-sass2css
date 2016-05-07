@@ -6,7 +6,7 @@ node_js:
 matrix:
   fast_finish: true
 before_script:
-  - npm install -g grunt-cli
+  - npm install babel-eslint
   - wget https://github.com/mgreter/sass2scss/archive/v1.0.5.tar.gz
   - tar zxf v1.0.5.tar.gz
   - cd sass2scss-1.0.5/
