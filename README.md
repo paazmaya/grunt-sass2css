@@ -10,7 +10,7 @@
 
 ## Getting Started
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4` and [Node.js](https://nodejs.org/en/)
+This plugin requires [Grunt](http://gruntjs.com/) `~1.0` and [Node.js](https://nodejs.org/en/)
 version to be minimum of `4.2.0`, which is the Long Term Support (LTS) version,
 and `sass2scss` binary to be available either via `PATH` or defined via configuration.
 
@@ -118,6 +118,9 @@ Lint and test your code using [Grunt](http://gruntjs.com/), via `grunt test` com
 
 ## Release History
 
+* `v0.3.0` (2016-05-07)
+  - It is Grunt.js `1.0.0` as the minimum supported
+  - Start using shared ESLint configuration #3
 * `v0.2.0` (2016-02-23)
   - Update dependencies
   - Minimum Node.js version requirement is `4.2.0` (LTS)

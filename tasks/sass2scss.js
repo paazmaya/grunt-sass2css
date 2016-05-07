@@ -34,7 +34,7 @@ module.exports = function exportGrunt(grunt) {
     });
 
 
-    function executor(map) {
+    const executor = function (map) {
       grunt.log.verbose.writeln('Converting file: ' + map.src);
 
       const command = [options.binPath].concat(
@@ -49,16 +49,16 @@ module.exports = function exportGrunt(grunt) {
         }
         iterate();
       });
-    }
+    };
 
-    function iterate() {
+    const iterate = function () {
       if (mapList.length === 0) {
         done();
         return;
       }
       const map = mapList.shift();
       executor(map);
-    }
+    };
 
     this.files.forEach((f) => {
       const src = f.src.filter((filepath) => {
