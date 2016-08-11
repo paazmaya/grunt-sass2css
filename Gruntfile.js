@@ -11,12 +11,6 @@
 module.exports = function exportGrunt(grunt) {
 
   grunt.initConfig({
-    eslint: {
-      all: [
-        'Gruntfile.js',
-        'tasks/*.js'
-      ]
-    },
 
     clean: {
       tests: ['tmp', 'test/fixtures/*.scss']
@@ -94,10 +88,9 @@ module.exports = function exportGrunt(grunt) {
 
   grunt.loadTasks('tasks');
 
-  grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
-  grunt.registerTask('test', ['eslint', 'clean', 'sass2scss', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'sass2scss', 'nodeunit']);
   grunt.registerTask('default', ['test']);
 };

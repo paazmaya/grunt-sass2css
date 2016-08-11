@@ -8,7 +8,10 @@
 
 'use strict';
 
-const exec = require('child_process').exec;
+const path = require('path'),
+  exec = require('child_process').exec;
+
+const MATCH_SASS = /\.sass$/;
 
 module.exports = function exportGrunt(grunt) {
 
@@ -75,14 +78,17 @@ module.exports = function exportGrunt(grunt) {
         let destination = f.dest;
         if (typeof destination !== 'string') {
           // Assume that destination to be written next to source
-          destination = source.replace(/\.sass$/, '.scss');
+          destination = source.replace(MATCH_SASS, '.scss');
         }
         else if (destination.indexOf('.scss') === -1) {
           // Assume it is a directory
-          destination = destination + '/' + source.split('/').pop().replace(/\.sass$/, '.scss');
+          destination = path.join(destination, source.split(path.separator).pop().replace(MATCH_SASS, '.scss'));
         }
 
-        mapList.push({src: source, dest: destination});
+        mapList.push({
+          src: source,
+          dest: destination
+        });
       });
     });
 
