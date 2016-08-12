@@ -118,7 +118,7 @@ Lint and test your code using [Grunt](http://gruntjs.com/), via `grunt test` com
 
 ## Release History
 
-* `v0.3.1` (2016-08-11)
+* `v0.3.1` (2016-08-13)
   - Dependencies are sure :tophat: up to date
   - Use ESLint directly without the Grunt.js plugin
 * `v0.3.0` (2016-05-07)
