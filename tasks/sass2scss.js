@@ -15,6 +15,10 @@ const MATCH_SASS = /\.sass$/;
 
 module.exports = function exportGrunt(grunt) {
 
+  const fileOpts = {
+    encoding: 'utf8'
+  };
+
   grunt.registerMultiTask('sass2scss', 'Convert Sass files to SCSS files with sass2scss', function register() {
 
     const options = this.options({
@@ -48,7 +52,7 @@ module.exports = function exportGrunt(grunt) {
           grunt.log.warn('Failure with sass2scss. ' + error);
         }
         else {
-          grunt.file.write(map.dest, stdout, 'utf8');
+          grunt.file.write(map.dest, stdout, fileOpts);
         }
         iterate();
       });
@@ -82,7 +86,7 @@ module.exports = function exportGrunt(grunt) {
         }
         else if (destination.indexOf('.scss') === -1) {
           // Assume it is a directory
-          destination = path.join(destination, source.split(path.separator).pop().replace(MATCH_SASS, '.scss'));
+          destination = path.join(destination, path.basename(source).replace(MATCH_SASS, '.scss'));
         }
 
         mapList.push({
