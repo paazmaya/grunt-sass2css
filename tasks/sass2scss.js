@@ -61,6 +61,7 @@ module.exports = function exportGrunt(grunt) {
     const iterate = function () {
       if (mapList.length === 0) {
         done();
+
         return;
       }
       const map = mapList.shift();
@@ -72,8 +73,10 @@ module.exports = function exportGrunt(grunt) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
+
           return false;
         }
+
         return true;
       });
 
