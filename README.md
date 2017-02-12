@@ -11,7 +11,7 @@
 ## Getting Started
 
 This plugin requires [Grunt](http://gruntjs.com/) `~1.0` and [Node.js](https://nodejs.org/en/)
-version to be minimum of `4.2.0`, which is the Long Term Support (LTS) version,
+version to be minimum of `6.9.05`, which is the Long Term Support (LTS) version,
 and `sass2scss` binary to be available either via `PATH` or defined via configuration.
 
 The `sass2scss` tool can only [be compiled from sources](https://github.com/mgreter/sass2scss)
@@ -123,6 +123,8 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
+* `v0.4.0` (2017)
+  - Minimum supported Node.js version is now `6.9.5`
 * `v0.3.1` (2016-08-13)
   - Dependencies are sure :tophat: up to date
   - Use ESLint directly without the Grunt.js plugin
@@ -142,4 +144,3 @@ There should be no errors appearing after any JavaScript file changes.
 Copyright (c) [Juga Paazmaya](https://paazmaya.fi) <paazmaya@yahoo.com>
 
 Licensed under the [MIT license](LICENSE).
-
