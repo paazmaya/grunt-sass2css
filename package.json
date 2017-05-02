@@ -26,12 +26,12 @@
   },
   "scripts": {
     "test": "grunt test",
-    "lint": "eslint -c .eslintrc.json Gruntfile.js tasks"
+    "lint": "eslint Gruntfile.js tasks"
   },
   "devDependencies": {
     "eslint-config-paazmaya": "^3.2.0",
-    "eslint": "~3.18",
-    "grunt-contrib-clean": "~1.0",
+    "eslint": "~3.19",
+    "grunt-contrib-clean": "~1.1",
     "grunt-contrib-nodeunit": "~1.0",
     "grunt": "~1.0"
   },
