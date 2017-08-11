@@ -40,8 +40,7 @@ module.exports = function exportGrunt(grunt) {
       return '--' + item;
     });
 
-
-    const executor = function (map) {
+    const executor = function executor(map) {
       grunt.log.verbose.writeln('Converting file: ' + map.src);
 
       const command = [options.binPath].concat(
@@ -58,7 +57,7 @@ module.exports = function exportGrunt(grunt) {
       });
     };
 
-    const iterate = function () {
+    const iterate = function iterate() {
       if (mapList.length === 0) {
         done();
 

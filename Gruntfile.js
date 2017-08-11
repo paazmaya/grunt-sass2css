@@ -61,18 +61,14 @@ module.exports = function exportGrunt(grunt) {
 
       justSourceConvert: {
         options: {
-          args: [
-            'convert'
-          ]
+          args: ['convert']
         },
         src: ['test/fixtures/*.sass']
       },
 
       directoryStrip: {
         options: {
-          args: [
-            'strip'
-          ]
+          args: ['strip']
         },
         files: {
           'tmp/': ['test/fixtures/styles-3.sass']
