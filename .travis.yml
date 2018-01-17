@@ -7,12 +7,12 @@ matrix:
   fast_finish: true
 before_script:
   - npm install babel-eslint
-  - wget https://github.com/mgreter/sass2scss/archive/v1.0.5.tar.gz
-  - tar zxf v1.0.5.tar.gz
-  - cd sass2scss-1.0.5/
+  - wget https://github.com/mgreter/sass2scss/archive/v1.1.1.tar.gz
+  - tar zxf v1.1.1.tar.gz
+  - cd sass2scss-1.1.1/
   - make
   - cd ..
-  - export PATH=$PATH:$PWD/sass2scss-1.0.5
+  - export PATH=$PATH:$PWD/sass2scss-1.1.1
   - sass2scss --version
 
 script:

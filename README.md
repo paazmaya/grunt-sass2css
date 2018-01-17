@@ -18,9 +18,9 @@ The `sass2scss` tool can only [be compiled from sources](https://github.com/mgre
 at the moment, for example in Linux/Mac:
 
 ```sh
-wget https://github.com/mgreter/sass2scss/archive/v1.0.5.tar.gz
-tar zxf v1.0.5.tar.gz
-cd sass2scss-1.0.5/
+wget https://github.com/mgreter/sass2scss/archive/v1.1.1.tar.gz
+tar zxf v1.1.1.tar.gz
+cd sass2scss-1.1.1/
 make
 [sudo] mv sass2scss /usr/local/bin/
 ```
