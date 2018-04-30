@@ -11,7 +11,7 @@
 ## Getting Started
 
 This plugin requires [Grunt](http://gruntjs.com/) `~1.0` and [Node.js](https://nodejs.org/en/)
-version to be minimum of `6.9.5`, which is [the Long Term Support (LTS) version](https://github.com/nodejs/LTS#lts-schedule1),
+version to be minimum of `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule),
 and `sass2scss` binary to be available either via `PATH` or defined via configuration.
 
 The `sass2scss` tool can only [be compiled from sources](https://github.com/mgreter/sass2scss)
