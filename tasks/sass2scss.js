@@ -11,7 +11,7 @@
 const path = require('path'),
   exec = require('child_process').exec;
 
-const MATCH_SASS = /\.sass$/;
+const MATCH_SASS = /\.sass$/u;
 
 module.exports = function exportGrunt(grunt) {
 
