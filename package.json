@@ -29,10 +29,10 @@
     "lint": "eslint Gruntfile.js tasks"
   },
   "devDependencies": {
-    "eslint-config-paazmaya": "^4.3.0",
-    "eslint": "~4.19",
+    "eslint-config-paazmaya": "^5.0.0",
+    "eslint": "~5.4",
     "grunt-contrib-clean": "~1.1",
-    "grunt-contrib-nodeunit": "~1.0",
+    "grunt-contrib-nodeunit": "~2.0",
     "grunt": "~1.0"
   },
   "peerDependencies": {
