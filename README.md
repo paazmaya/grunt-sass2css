@@ -123,8 +123,9 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
-* `v0.4.0` (2017-07)
-  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
+* `v0.4.0` (2018-12-16)
+  - Minimum Node.js version lifted from `4.2.0` to `8.1.11`
+  - Use Grunt.js minimum of `v1.0.3` and latest `sass2scss` which is `v1.1.2`
 * `v0.3.1` (2016-08-13)
   - Dependencies are sure :tophat: up to date
   - Use ESLint directly without the Grunt.js plugin
