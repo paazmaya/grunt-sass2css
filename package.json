@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "eslint-config-paazmaya": "5.2.0",
-    "eslint": "5.15.1",
+    "eslint": "5.15.2",
     "grunt-contrib-clean": "2.0.0",
     "grunt-contrib-nodeunit": "2.0.0",
     "grunt": "1.0.3"
