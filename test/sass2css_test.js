@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
+
 
 var grunt = require('grunt');
 

@@ -6,10 +6,11 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
 
 const path = require('path'),
-  exec = require('child_process').exec;
+  {
+    exec
+  } = require('child_process');
 
 const MATCH_SASS = /\.sass$/u;
 
