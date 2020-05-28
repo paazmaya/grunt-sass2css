@@ -9,8 +9,8 @@
 
 ## Getting Started
 
-This plugin requires [Grunt](http://gruntjs.com/) `~1.0.3` and [Node.js](https://nodejs.org/en/)
-version to be minimum of `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule),
+This plugin requires [Grunt](http://gruntjs.com/) `~1.1.0` and [Node.js](https://nodejs.org/en/)
+version to be minimum of `10.13.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule),
 and `sass2scss` binary to be available either via `PATH` or defined via configuration.
 
 The `sass2scss` tool can only [be compiled from sources](https://github.com/mgreter/sass2scss)
@@ -122,6 +122,9 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
+* `v0.5.0` (2020-05-28)
+  - Minimum Node.js version lifted from `8.1.11` to `10.13.0`
+  - Use Grunt.js minimum of `v1.1.0`
 * `v0.4.0` (2018-12-16)
   - Minimum Node.js version lifted from `4.2.0` to `8.1.11`
   - Use Grunt.js minimum of `v1.0.3` and latest `sass2scss` which is `v1.1.2`
