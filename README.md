@@ -122,6 +122,7 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
+  - Travis in now used to test only with Node.js version 10.
 * `v0.5.0` (2020-05-28)
   - Minimum Node.js version lifted from `8.1.11` to `10.13.0`
   - Use Grunt.js minimum of `v1.1.0`
