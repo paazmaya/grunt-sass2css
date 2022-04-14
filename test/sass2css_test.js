@@ -7,8 +7,7 @@
  */
 
 
-
-var grunt = require('grunt');
+const grunt = require('grunt');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -39,8 +38,8 @@ exports.sass2css = {
   defaultOptions: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/default-1.scss');
-    var expected = grunt.file.read('test/expected/default-1.scss');
+    const actual = grunt.file.read('tmp/default-1.scss');
+    const expected = grunt.file.read('test/expected/default-1.scss');
     test.equal(actual, expected, 'should describe what the default behavior is.');
 
     test.done();
@@ -49,8 +48,8 @@ exports.sass2css = {
   prettyKeep: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/pretty-keep-1.scss');
-    var expected = grunt.file.read('test/expected/pretty-keep-1.scss');
+    const actual = grunt.file.read('tmp/pretty-keep-1.scss');
+    const expected = grunt.file.read('test/expected/pretty-keep-1.scss');
     test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
 
     test.done();
@@ -59,8 +58,8 @@ exports.sass2css = {
   expandedVeryPretty: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/styles-2.very-pretty.scss');
-    var expected = grunt.file.read('test/expected/styles-2.very-pretty.scss');
+    const actual = grunt.file.read('tmp/styles-2.very-pretty.scss');
+    const expected = grunt.file.read('test/expected/styles-2.very-pretty.scss');
     test.equal(actual, expected, 'should describe what the default behavior is.');
 
     test.done();
@@ -69,8 +68,8 @@ exports.sass2css = {
   justSourceConvert: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('test/fixtures/styles-2.scss');
-    var expected = grunt.file.read('test/expected/styles-2.convert.scss');
+    const actual = grunt.file.read('test/fixtures/styles-2.scss');
+    const expected = grunt.file.read('test/expected/styles-2.convert.scss');
     test.equal(actual, expected, 'should describe what the default behavior is.');
 
     test.done();
@@ -79,8 +78,8 @@ exports.sass2css = {
   directoryStrip: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/styles-3.scss');
-    var expected = grunt.file.read('test/expected/styles-3.strip.scss');
+    const actual = grunt.file.read('tmp/styles-3.scss');
+    const expected = grunt.file.read('test/expected/styles-3.strip.scss');
     test.equal(actual, expected, 'should describe what the default behavior is.');
 
     test.done();
