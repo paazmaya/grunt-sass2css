@@ -3,7 +3,6 @@
 > Convert Sass files to SCSS files with sass2scss
 
 [![Build Status](https://img.shields.io/travis/paazmaya/grunt-sass2scss.svg?style=flat-square)](https://app.travis-ci.com/paazmaya/grunt-sass2scss)
-[![devDependency Status](https://img.shields.io/david/dev/paazmaya/grunt-sass2scss.svg?style=flat-square)](https://david-dm.org/paazmaya/grunt-sass2scss#info=devDependencies)
 [![Built with Grunt](http://img.shields.io/badge/Grunt-1.0-blue.svg?style=flat-square)](http://gruntjs.com/)
 [![Using sass2scss](https://img.shields.io/badge/sass2scss-1.0-blue.svg?style=flat-square)](https://github.com/mgreter/sass2scss)
 
